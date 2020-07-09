@@ -25,7 +25,16 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-
+  array.collect do |word|
+    letters = word.chars
+    letters = letters.collect do |letter|
+      if letters.index(letter) == 2
+        "$"
+      else
+        letter
+      end
+    end
+    letters.join
 end
 
 def find_a(array)
