@@ -35,6 +35,7 @@ def kesha_maker(array)
       end
     end
     letters.join
+  end
 end
 
 def find_a(array)
